@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<h1>When are you going to die?</h1>
+<FORM name="form">
+<h2>Pick a Color.</h2>
+<input type=radio name="1" value="10" onClick="x(this.value)">Red
+<input type=radio name="1" value="21" onClick="x(this.value)">Blue
+<input type=radio name="1" value="37" onClick="x(this.value)">Green
+<input type=radio name="1" value="99" onClick="x(this.value)">Black
+
+<h2>Pick a food.</h2>
+<input type=radio name="2" value="1" onClick="x(this.value)">Pizza
+<input type=radio name="2" value="2" onClick="x(this.value)">Celery
+<input type=radio name="2" value="3" onClick="x(this.value)">Sushi
+<input type=radio name="2" value="4" onClick="x(this.value)">Cookies
+
+<h2>Pick a Social Media.</h2>
+<input type=radio name="3" value="13" onClick="x(this.value)">Pinterest
+<input type=radio name="3" value="2342" onClick="x(this.value)">Facebook
+<input type=radio name="3" value="333" onClick="x(this.value)">Twitter
+<input type=radio name="3" value="43423" onClick="x(this.value)">LinkedIn
+
+<h2>Pick a Vehicle.</h2>
+<input type=radio name="4" value="13423" onClick="x(this.value)">Lamborghini
+<input type=radio name="4" value="26" onClick="x(this.value)">Ford Focus
+<input type=radio name="4" value="53" onClick="x(this.value)">Smart Car
+<input type=radio name="4" value="400" onClick="x(this.value)">Oldmobile
+
+<h2>Do you like bananas?</h2>
+<input type=radio name="5" value="1" onClick="x(this.value)">Yes
+<input type=radio name="5" value="20007" onClick="x(this.value)">No
+
+<h2>What's your name?</h2>
+<input type=text name="6" onkeydown="question5(this.value)" value=""><br>
+
+<input type=button onClick="Score()" value="Submit">
+
+<input type=button onClick="Lottery()" value="Give me lottery numbers.">
+
+</FORM>
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+
+var score = null;
+var inputWord = null;
+var newArray = [];
+
+
+function x(y){
+  score += Number(y);
+}
+
+function question5(k){
+  inputWord = (k.length + 1);
+}
+
+function Score(){
+  var total = score + inputWord;
+  console.log(total);
+  if (total % 2 === 0){
+    alert("You'll live to see another day.");
+  }
+  else{
+    alert("You're probably going to die tomorrow.");
+  }
+}
+
+function Lottery(){
+  var randomNumber = 0;
+  for(i=0; i<=8; i++){
+    randomNumber = Math.round(Math.random() * 99);
+    newArray.push(randomNumber);
+  }
+  alert(newArray);
+}
+
+</script>
+
+</body>
+</html>
