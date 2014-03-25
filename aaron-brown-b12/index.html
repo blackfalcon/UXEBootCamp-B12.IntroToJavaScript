@@ -3,7 +3,7 @@
   <head>
     <title>My JavaScript Page</title>
     <link rel="stylesheet" href="layout.css">
-    <script type="text/javascript" href="myscript.js"></script>
+
   </head>
   <body>
     <header class="container">
@@ -35,12 +35,13 @@
           <label for="Dice Sides">Dice type:</label>
           <input type="number" id="numberOfSides"> sided dice
           <br>
-          <button type="button" onclick="diceRoll(document.getElementById("numberOfSides").value, document.getElementById("numberOfDice").value)">Roll!</button>
+          <button type="button" onClick='diceRoll(document.getElementById("numberOfSides").value, document.getElementById("numberOfDice").value)'>Roll!</button>
         </fieldset>
       </form>
     </main>
     <footer class="container">
       <p>Footer</p>
     </footer>
+    <script type="text/javascript" src="myscript.js"></script>
   </body>
 </html>
