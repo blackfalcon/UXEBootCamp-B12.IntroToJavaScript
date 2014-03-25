@@ -23,12 +23,26 @@ nav {
   background-color:#FFC0C0;
   clear:both;
 }
+figure.container {
+  background-color:white;
+}
+.imagemain {
+  width:500px;
+  display:block;
+  margin:1em auto;
+}
 .clearfix:after {
   content:" ";
   visibility: hidden;
   display: block;
   height:0;
   clear:both;
+}
+.inputline {
+  display:inline-block;
+}
+footer.container {
+  text-align:center;
 }
 
 /* media queries for screen resolution */
@@ -57,6 +71,12 @@ nav {
   .container h1 {
     font-size:24px;
   }
+  .imagemain {
+    width:374px;
+  }
+  .inputline {
+    display:block;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -73,5 +93,11 @@ nav {
   }
   .container h1 {
     font-size:18px;
+  }
+  .imagemain {
+    width:250px;
+  }
+  .inputline {
+    display:block;
   }
 }

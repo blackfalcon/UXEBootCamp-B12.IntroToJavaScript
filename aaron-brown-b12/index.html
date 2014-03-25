@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My JavaScript Page</title>
+    <title>Our JavaScript Dice Roller</title>
     <link rel="stylesheet" href="layout.css">
 
   </head>
   <body>
     <header class="container">
-      <h1>My JavaScript Page</h1>
+      <h1>Our JavaScript Dice Roller</h1>
       <nav class="clearfix">
         <div class="navitem">
           <a href="">Link A</a>
@@ -26,21 +26,28 @@
         </div>
       </nav>
     </header>
+    <figure class="container">
+      <img src="dicefront.jpg" alt="" class="imagemain">
+    </figure>
     <main class="container">
       <form>
         <fieldset>
           <legend>Roll some dice, bruv!</legend>
-          <label for="Dice Rolls">Number of dice rolled:</label>
-          <input type="number" id="numberOfDice">
-          <label for="Dice Sides">Dice type:</label>
-          <input type="number" id="numberOfSides"> sided dice
+          <div class="inputline">
+            <label for="Dice Rolls">Number of dice rolled:</label>
+            <input type="number" id="numberOfDice">
+          </div>
+          <div class="inputline">
+            <label for="Dice Sides">Dice type:</label>
+            <input type="number" id="numberOfSides"> sided dice
+          </div>
           <br>
           <button type="button" onClick='diceRoll(document.getElementById("numberOfSides").value, document.getElementById("numberOfDice").value)'>Roll!</button>
         </fieldset>
       </form>
     </main>
     <footer class="container">
-      <p>Footer</p>
+      <small>Thank you for using our dice roller!</small>
     </footer>
     <script type="text/javascript" src="myscript.js"></script>
   </body>
