@@ -1,0 +1,54 @@
+<!doctype html>
+<head>
+  <link rel=stylesheet type="text/css" href="nobullet.css">
+</head>
+
+
+<body>
+
+<form name=form>
+  
+What dice type?
+<ul>
+  <li><input type=radio name=sides onclick="die = 2"> 2 Sided (flip a coin)</li>
+  <li><input type=radio name=sides onclick="die = 3"> 3 Sided</li>
+  <li><input type=radio name=sides onclick="die = 4"> 4 Sided</li>
+  <li><input type=radio name=sides onclick="die = 5"> 5 Sided</li>
+  <li><input type=radio name=sides onclick="die = 6"> 6 Sided</li>
+  <li><input type=radio name=sides onclick="die = 8"> 8 Sided</li>
+  <li><input type=radio name=sides onclick="die = 10"> 10 Sided</li>
+  <li><input type=radio name=sides onclick="die = 12"> 12 Sided</li>
+  <li><input type=radio name=sides onclick="die = 20"> 20 Sided</li>
+  <li><input type=radio name=sides onclick="die = 30"> 30 Sided</li>
+  <li><input type=radio name=sides onclick="die = 100"> 100 Sided</li>
+  
+  
+    <li><input type=radio name=sides onclick="die = 10000"> 100000 Sided</li>
+  
+</ul>
+
+How many dice to roll?
+<p>
+  
+  <input type=radio name=number onclick="dice = 1">10000
+  
+  
+  
+  <input type=radio name=number onclick="dice = 1">1
+  <input type=radio name=number onclick="dice = 2">2
+  <input type=radio name=number onclick="dice = 3">3
+  <input type=radio name=number onclick="dice = 4">4
+  <input type=radio name=number onclick="dice = 5">5
+  <input type=radio name=number onclick="dice = 6">6
+  <input type=radio name=number onclick="dice = 7">7
+  <input type=radio name=number onclick="dice = 8">8
+  <input type=radio name=number onclick="dice = 9">9
+  <input type=radio name=number onclick="dice = 10">10
+</p>
+
+<input type=button value="Hit dat Money" name=button onclick="dice_roll(die, dice)">
+<input type=text size=10 name=text>
+  
+</form>
+<script type="text/javascript" src="script.js"></script>
+</body>
